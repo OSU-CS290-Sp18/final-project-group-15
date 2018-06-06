@@ -1,32 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>doggos</title>
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <link href='style.css' rel = 'stylesheet'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="../index.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
 
-    </head>
-    <body>
-        <header>
-            <div class = 'navbar'>
-                <ul>
-                    <li class = 'navElement active'><a href = '#home'>Home</a></li>
-                    <li class = 'navElement'><a href = '#archives'>Archives</a></li>
-                    <li class = 'navElement'><a href = '#categories'>Categories</a></li>
-                    <li class = 'navElement'><a href = '#authors'>Authors</a></li>
-                    <li class = 'navElement'><a href = '#'>Something</a></li>
+    <meta charset="utf-8">
+    <title>Dadank.com</title>
 
-                    <li class = 'navElement main'><a href = '#archives'>Write Article</a></li>
-                    <!--<li class = 'navElement'><input type = 'text' id = 'SearchBar' placeholder = 'Search...'></li>-->
+    <!-- This is a stylesheet that includes the font you should use: Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
-                </ul>
-            </div>
-        </header>
-        <div id='container'>
+    <link rel="stylesheet" href="style.css" media="screen">
 
+    <!-- This script incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <a href="#"><h1 class="site-title"><i class="fas fa-beer"></i> DaDank.com</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navlink"><a href="#">Trending</a></li>
+          <li class="navitem navlink"><a href="#">People</a></li>
+     
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sidenav">  
+     <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+     <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+     
+   
+</div>
+
+<!-- Page content -->
+<div class="main">
+  ...
+</div>
+    <main class="twit-container">
+
+      <article class="twit">
+        <div class="twit-icon">
         </div>
-    </body>
+        <div class="twit-content">
+          <p class="twit-text">
+            This is going to be the description of an article....
+          </p>
+          <p class="twit-attribution">
+            <a href="#">This is a link to an article</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+         
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Anyone watch the baseball game last night?  The Beavs are still in 1st place!
+          </p>
+          <p class="twit-attribution">
+            <a href="#">BeaverBeliever</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+         
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            A body in motion must remain in motion unless acted upon by an outside force.
+          </p>
+          <p class="twit-attribution">
+            <a href="#">NewtonRulez</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Huh?
+          </p>
+          <p class="twit-attribution">
+            <a href="#">ConfusedTweeterer</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Why did the calf cross the road?
+          </p>
+          <p class="twit-attribution">
+            <a href="#">Setup</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            To get to the udder side!
+          </p>
+          <p class="twit-attribution">
+            <a href="#">Punchline</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Any questions about flexboxes?
+          </p>
+          <p class="twit-attribution">
+            <a href="#">Hess</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Friendly reminder: your taxes were due yesterday.
+          </p>
+          <p class="twit-attribution">
+            <a href="#">TheIRS</a>
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+ 
+
+  </body>
+
 </html>
