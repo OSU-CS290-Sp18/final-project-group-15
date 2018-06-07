@@ -21,3 +21,58 @@ header{
     height: 15%;
     width: 100%;
 }
+
+a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+a:selected{
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+}
+
+li.active{
+    background-color: var(--blue);
+}
+
+.navbar{
+    background-color: var(--light);
+    top: 0;
+    left: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.navElement{
+    color: var(--cream);
+    padding: 15px;
+    font-size: 32px;
+    display: inline;
+    justify-content: center;
+    height: 100%;
+}
+
+.navElement:hover{
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+input:focus{
+    outline: 0;
+}
