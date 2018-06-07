@@ -49,3 +49,30 @@ li a{
 li.active{
     background-color: var(--light);
 }
+
+.navbar{
+    background-color: var(--cream);
+    top: 0;
+    left: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.navElement{
+    color: var(--blue);
+    padding: 15px;
+    font-size: 32px;
+    display: inline;
+    justify-content: center;
+    height: 100%;
+}
+
+.navElement:hover{
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+input:focus{
+    outline: 0;
+}
