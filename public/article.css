@@ -7,72 +7,57 @@
     --cream: #f6f7eb;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-*{
-    font-family: 'Cabin', serif;
-}
-
-header{
-    height: 15%;
-    width: 100%;
+body {font-family: "Roboto", Helvetica, sans-serif;
+  margin:0;
+  background-color: #eee;
 }
 
 a{
-    text-decoration: none;
-    color: var(--green);
+  text-decoration: none;
+  color: #343434;
 }
 
-a:selected{
-
+  .site-title {
+margin: 0;
+padding: 10px 20px;
+font-size: 30px;
+font-weight: 100;
+background-color: #319df6;
+color: #fff;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+
+  .navbar { 
+    background-color: #ffff00;
     overflow: hidden;
+    line-height: 20px;
 }
 
-li{
-    float: left;
+.navlist {
+float: left;
+color: #fff;
+text-align: center;
+padding: 12px 16px;
+text-decoration: none;
+font-size: 18px;
+margin: 0 0 0 20px;
+padding: 0;
 }
 
-li a{
-    display: block;
-    padding: 10px;
+.navitem {
+display: inline-block;
 }
 
-li.active{
-    background-color: var(--blue);
+a:hover,
+a:focus {
+color: #6a5acd;
 }
 
-.navbar{
-    background-color: var(--light);
-    top: 0;
-    left: 0;
-    display: block;
-    position: relative;
-    width: 100%;
+a:focus {
+outline: none;
 }
 
-.navElement{
-    color: var(--cream);
-    padding: 15px;
-    font-size: 32px;
-    display: inline;
-    justify-content: center;
-    height: 100%;
-}
-
-.navElement:hover{
-    background-color: var(--green);
-    cursor: pointer;
-}
-
-input:focus{
-    outline: 0;
+.navlink a {
+padding: 8px 10px;
+display: inline-block;
 }
