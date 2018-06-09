@@ -1,11 +1,12 @@
-
 body {
-font-family: "Times New Roman", Times, serif;
-margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
 }
+
 a {
-text-decoration: none;
+    text-decoration: none;
 }
+
 .sidenav {
     height: 77%; /* Full-height: remove this if you want "auto" height */
     width: 215px; /* Set the width of the sidebar */
@@ -38,7 +39,6 @@ text-decoration: none;
     padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -54,97 +54,111 @@ background-color: #800000;
 color: #ffffff;
 font-size: 20px;
 line-height: 25px;
-
 }
 
 
 .navitem {
-display: inline-block;
+    display: inline-block;
+}
 
+.navbar a {
+    color: #ffffff;
 }
-a {
-color: #ffffff;
-}
-a:hover,
-a:focus {
-color: #FE16F7;
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #FE16F7;
 }
 
 .navlink a {
-padding: 7px 11px;
-display: inline-block;
+    padding: 7px 11px;
+    display: inline-block;
 }
 
 .sidenav-search {
-float: right;
-margin-right: 20px;
-padding: 0;
-line-height: 35px;
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+    line-height: 35px;
 }
+
 #navbar-search-input {
-padding: 5px;
-font-size: 15px;
-border: 1px solid #000000;
-border-radius: 2px;
+    display: inline-flex;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 2px;
 }
 #navbar-search-input:focus {
-outline: none;
-background-color: #ffffff;
+    outline: none;
+    background-color: #ffffff;
 }
 #navbar-search-button {
-float: right;
-font-size: 16px;
-background: none;
-border: none;
-color: #00008B;
-cursor: pointer;
+    display: inline-flex;
+    float: right;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #00008B;
+    cursor: pointer;
 }
 #navbar-search-button:hover {
-color: #FE16F7;
+    color: #FE16F7;
 }
 #navbar-search-button:focus {
-color: #FE16F7;
-outline: none;
+    color: #FE16F7;
+    outline: none;
 }
+
+#acl-link {
+    color: black;
+}
+
 .acl-container {
-margin: 40px 10%;
-display: flex;
-flex-wrap: wrap;
+    margin: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
 
-border-radius: 25px;
-padding-left: 175px;
-padding-right: 30px;
-background: #fff;
+    border-radius: 25px;
+    padding-left: 175px;
+    padding-right: 30px;
+    background: #fff;
 }
+
 .acl {
-flex: 0 1 25%;
-display: flex;
-margin: 4px;
-padding: 15px;
-background-color:#FFFFFF;
-border: 10px solid #800000;
-border-radius: 15px;
-padding-left: 8px;
-padding-right: 5px;
-
-
+    flex: 0 1 25%;
+    display: flex;
+    margin: 4px;
+    padding: 15px;
+    background-color:#FFFFFF;
+    border: 10px solid #800000;
+    border-radius: 15px;
+    padding-left: 8px;
+    padding-right: 5px;
 }
+
 .acl-icon {
-font-size: 25px;
+    font-size: 25px;
 }
+
 .acl-content {
-flex: 1 1 75%;
-margin-left: 10px;
+    flex: 1 1 75%;
+    margin-left: 10px;
 }
 
 .acl-content .acl-attribution {
-margin-top: 5px;
-text-align: right;
-font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
+    font-weight: bold;
 }
 
 .acl-container-div {
-margin: 50px 6%;
-display: flex;
-flex-wrap: wrap;
+    margin: 50px 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acl-link {
+    justify-content: center;
+    align-items: flex-end;
 }
