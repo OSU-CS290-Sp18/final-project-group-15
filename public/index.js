@@ -1,9 +1,9 @@
-// window.onload = function(){
-//     $(".navElement:has(a)").on('click', function(e){
-//         $(".navElement").removeClass("active");
-//         $(this).addClass("active");
-//     });
-// }
+window.onload = function(){
+    $(".navElement:has(a)").on('click', function(e){
+        $(".navElement").removeClass("active");
+        $(this).addClass("active");
+    });
+}
 
 var searchButton = document.getElementById("navbar-search-button");
 
@@ -16,6 +16,8 @@ var badArticles = [];
 
 var originalArticles = [];
 
+var childrenRemoved = 0;
+
 for(ii = 0; ii < allArticles.length; ii ++) {
     originalArticles.push(allArticles[ii]);
     console.log(articleText[ii]);
@@ -27,14 +29,13 @@ function doSearch() {
     var artNum = articles.length;
 
     var query = document.getElementById("navbar-search-input");
-    console.log(query.value);
+    console.log("Searching for '" + query.value + "'");
 
 
     for(ii = 0; ii < artNum; ii ++) {
         var artText = articleText[ii];
-        console.log(artText);
-        if(artText.value != "") {
-            if(artText.text.toUpperCase().indexOf(query.value.toUpperCase()) === -1) {
+        if(artText.textContent != "") {
+            if(artText.textContent.toUpperCase().indexOf(query.value.toUpperCase()) === -1) {
                 badArticles.push(articles[ii]);
             } else {
                 goodArticles.push(articles[ii]);
@@ -42,33 +43,23 @@ function doSearch() {
         }
     }
 
+    console.log(allArticles + " ... before removing")
     while(allArticles.firstChild){
         allArticles.removeChild(allArticles.firstChild);
-        console.log("aaa");
+        console.log("removed child ... " + allArticles);
+        childrenRemoved ++;
     }
+    console.log(childrenRemoved + " posts removed");
+    console.log(allArticles + " ... after removing");
 
     for(ii = 0; ii < goodArticles.length; ii ++) {
+        console.log(goodArticles[ii]);
         allArticles.push(goodArticles[ii]);
     }
+
+
 }
 
 searchButton.doSearch = function() {
-
-    // while(articleContainer.firstChild){
-    //     articleContainer.removeChild(articleContainer.firstChild);
-    //     console.log("sjadifopas");
-    // }
-
-    var query = document.getElementByID("navbar-search-input");
-
-    for(ii = 0; ii < articles.length; ii ++) {
-        var artText = articles[ii].text;
-        if(artText.value != ""){
-            if((artText.text).toUpperCase().indexOf(query.value.toUpperCase()) === -1) {
-                badArticles.push(articles[ii]);
-                articleContainer.remove(articles[ii]);
-            }
-        }
-    }
-
+    console.log("hello");
 }
