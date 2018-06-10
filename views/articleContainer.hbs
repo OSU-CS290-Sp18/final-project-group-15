@@ -1,0 +1,7 @@
+<section id='articles'>
+    <main class='acl-container'>
+        {{#each articles as |a|}}
+            {{> article articleText = a.text articleTitle = a.title}}
+        {{/each}}
+    </main>
+</section>
