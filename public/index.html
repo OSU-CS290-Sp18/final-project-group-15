@@ -1,32 +1,153 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>doggos</title>
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <link href='style.css' rel = 'stylesheet'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="../index.js"></script>
+<html>
+  <head>
 
-    </head>
-    <body>
-        <header>
-            <div class = 'navbar'>
-                <ul>
-                    <li class = 'navElement active'><a href = '#home'>Home</a></li>
-                    <li class = 'navElement'><a href = '#archives'>Archives</a></li>
-                    <li class = 'navElement'><a href = '#categories'>Categories</a></li>
-                    <li class = 'navElement'><a href = '#authors'>Authors</a></li>
-                    <li class = 'navElement'><a href = '#'>Something</a></li>
+    <meta charset="utf-8">
+    <title>News$ite</title>
 
-                    <li class = 'navElement main'><a href = '#archives'>Write Article</a></li>
-                    <!--<li class = 'navElement'><input type = 'text' id = 'SearchBar' placeholder = 'Search...'></li>-->
+    <!-- This is a stylesheet that includes the font you should use: Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
-                </ul>
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <!-- This script incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar">
+          <li class="navitem site-title"><i class="fas fa-beer" href="index.html"></i><a href="index.html">News$ite</a></li>
+          <li class="navitem navlink active"><a href="index.html">Home</a></li>
+          <li class="navitem navlink"><a href="#">Trending</a></li>
+          <li class="navitem navlink"><a href="#">People</a></li>
+          <li class="navitem navlink"><a href="about.html">About</a></li>
+      </nav>
+    </header>
+
+    <div class="sidenav">
+        <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i>Search</button>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </li>
+    </div>
+
+<!-- Page content -->
+<div class="main">
+  ...
+</div>
+
+<section id = "articles">
+        <main class="acl-container">
+
+          <article class="acl">
+            <div class="acl-icon">
             </div>
-        </header>
-        <div id='container'>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
 
-        </div>
-    </body>
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                Test Article "q"
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                Test Article "z"
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                Test Article "x"
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+          <article class="acl">
+            <div class="acl-icon">
+            </div>
+            <div class="acl-content">
+              <p class="acl-text">
+                This is going to be the description of an article....
+              </p>
+              <a class = "acl-link" href="article.html">Link to Article</a>
+            </div>
+          </article>
+
+        </main>
+</section>
+  </body>
+
+  <script src="index.js" charset="utf-8"></script>
 </html>
