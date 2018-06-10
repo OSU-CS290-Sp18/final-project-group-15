@@ -5,6 +5,7 @@ var exphbs = require('express-handlebars');
 var express = require("express");
 var app = express();
 
+
 app.engine('.hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 app.use(bodyParse.json());
@@ -20,6 +21,19 @@ app.get("/", function(req, res){
 });
 app.post("/renderArticle/:title", (req, res) => {
     console.log(req.body);
+    res.render('articleView',{
+        articleText: req.body.articleText,
+        articleTitle: req.body.articleTitle
+    });
+});
+app.post('/postArticle', (req, res) => {
+    fs.readFile(path.join(__dirname, '/articles.json'), (err, data) => {
+        if(!err) var articlesJSON = JSON.parse(data);
+
+        articlesJSON.push({title: req.body.articleTitle, text: req.body.articleText});
+        console.log(articlesJSON);
+        fs.writeFile('articles.json', JSON.stringify(articlesJSON));
+    });
 
 });
 app.get('/write', (req, res) => {

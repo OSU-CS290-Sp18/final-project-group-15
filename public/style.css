@@ -184,6 +184,6 @@ input{
 .new-article-input{
     overflow-y: scroll;
     overflow-x: wrap;
-    height: 100px;
-    width: 60%;
+    height: 500px;
+    width: 100%;
 }
