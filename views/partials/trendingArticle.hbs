@@ -1,7 +1,10 @@
 <article class="acl">
   <div class="acl-content">
     <h1 class='acl-title'>{{articleTitle}}</h1>
-    
+    {{#ifEquals clicks 1}}
+    <h4 class='acl-clicks'>Visited {{clicks}} time</h2>
+    {{else}}
     <h4 class='acl-clicks'>Visited {{clicks}} times</h2>
+    {{/ifEquals}}
   </div>
 </article>

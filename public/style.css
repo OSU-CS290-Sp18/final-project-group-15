@@ -185,6 +185,8 @@ button:hover{
     --line-height: 1.4;
     --lines-to-show: 5;
 }
+
+/*TODO: DO NOT TOUCH */
 .acl-text {
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
@@ -222,7 +224,7 @@ button:hover{
     border-radius: 15px;
     padding-left: 8px;
     padding-right: 5px;
-    width: 420px;
+    width: 800px;
 }
 
 textarea{
