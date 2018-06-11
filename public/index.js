@@ -18,18 +18,21 @@ window.onload = function(){
         }
     }
     $(".post-article").on('click', function(e){
+        var text = $('.new-article-input')[0].value;
+        var title = $('.new-title-input')[0].value;
+
+        if(!title || !text){
+            alert("Please Fill the Presented Fields");
+            return;
+        }
         var request = new XMLHttpRequest();
         request.open("POST", '/postArticle');
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({articleText: $('.new-article-input')[0].value, articleTitle: $('.new-title-input')[0].value}));
+        request.send(JSON.stringify({articleText: text, articleTitle: title}));
     });
-    $(".acl-content").on('click', function(e){
-        var request = new XMLHttpRequest();
-        request.open("POST", '/renderArticle/' + $(this)[0].childNodes[1].innerText);
-        request.setRequestHeader('Content-Type', 'application/json');
-        console.log($(this));
-        request.send(JSON.stringify({articleText: $(this)[0].childNodes[3].innerText, articleTitle: $(this)[0].childNodes[1].innerText}));
-        window.location.replace(window.location.href + "renderArticle/" + $(this)[0].childNodes[1].innerText);
+    $(".acl").on('click', function(e){
+        var flag = window.location.href.split('/')[3] === 'trending' ? 1 : 0;
+        window.location.replace(window.location.href.split('/')[0] + "renderArticle/" + $(this).index() + "/" + flag);
     });
     $(".navElement:has(a)").on('click', function(e){
         $(".navElement").removeClass("active");

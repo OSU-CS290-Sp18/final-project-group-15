@@ -22,6 +22,23 @@ h1{
 input{
     z-index: 5;
 }
+
+button{
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+    font-size: 32px;
+    background-color: #696969;
+    border: 3px solid #800000;
+    border-radius: 25px;
+    height: 100px;
+    width: 200px;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: #800000;
+}
 .sidenav {
     height: 77%; /* Full-height: remove this if you want "auto" height */
     width: 215px; /* Set the width of the sidebar */
@@ -71,6 +88,7 @@ input{
     font-weight: 100;
     background-color: #800000;
     color: #ffffff;
+    overflow:hidden;
 }
 
 
@@ -182,8 +200,37 @@ input{
 }
 
 .new-article-input{
-    overflow-y: scroll;
     overflow-x: wrap;
-    height: 500px;
+    height: 350px;
     width: 100%;
+}
+
+.full-acl-container{
+    overflow: hidden;
+    margin: 100px 0px 0px 400px;
+
+}
+.full-acl{
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    flex: 0 1 25%;
+    display: block;
+    margin: 4px;
+    padding: 15px;
+    background-color:#FFFFFF;
+    border: 10px solid #800000;
+    border-radius: 15px;
+    padding-left: 8px;
+    padding-right: 5px;
+    width: 420px;
+}
+
+textarea{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border: solid 3px #800000;
+    margin: 10px;
+    outline: none;
+    font-size: 20px;
 }

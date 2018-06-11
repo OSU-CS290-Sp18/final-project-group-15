@@ -1,0 +1,10 @@
+<section id='articles'>
+    <main class='acl-container'>
+        {{#each trendingArticles as |a|}}
+        {{> trendingArticle articleTitle = a.articleTitle clicks = a.clicks}}
+        {{else}}
+        <h3>No visited articles yet :(</h3>
+
+        {{/each}}
+    </main>
+</section>
